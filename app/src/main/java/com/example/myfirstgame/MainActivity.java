@@ -2,6 +2,7 @@ package com.example.myfirstgame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startGame(View view) {
-        Log.i("ImageButton", "Clicked");
+
+        //Log.i("ImageButton", "Clicked");
+        Intent intent = new Intent(this, StartGame.class);
+        startActivity(intent);
+        finish();
     }
 }
